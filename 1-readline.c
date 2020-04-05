@@ -11,9 +11,9 @@ int main(void)
 	ssize_t read;
 
 	/*open file check if null*/
-	filep = open("/etc/motd", O_RDONLY );
-	if (*filep == NULL)
-		exit (EXIT_FAILURE);
+	filep = open("/etc/motd", O_RDONLY, S_IRUSR);
+	if (filep == -1)
+		return (-1);
 
 	/*while loop reads if there is no failure*/
 	while ((read = getline (&theline, &leng, filep)) != -1)
@@ -25,6 +25,6 @@ int main(void)
 	}
 	/*free line read*/
 	free(theline);
-	exit(EXIT_SUCCESS);
+	return (0);
 }
 /*used https://linux.die.net/man/3/open as a template*/
