@@ -1,21 +1,24 @@
-Simple Shell
-A custom made, command line interpreter. The purpose of this Shell is to issue combinations of commands and execute them on the same command line. Upon execution, it will create a newline after successful or failed execution of a program/command.
-When using Shell, the command line is defined by the path which the user is on, followed by a '$' dollar sign. It should take in any number of characters and commands. However there are checks in place where what if a command was written incorrectly? Or the user inputs characters and integers withough typing out a command? As an error is encountered on the Shell, it will display an error message and enter a newline after displaying the message.
-Supported text editors are Vi, Vim, Emacs and Nano.
+## simple_shell
 
-Supported commands are:
-- ls
-- cd
-- echo
-- chmod
-- chown
-- sort
-- grep
-- cut
-- tr
+This is a custom command line interpreter, otherwise known as a Shell. The purpose of this Shell is to execute commands based on what the user inputs on the prompt. Our prompt to be displayed is simply the executable file of our 
+Shell, which takes in a number of parameters afterwards.
+Once parameters are filled in, a process takes place and the first step of the process is our Shell first checks for aliases of commands in what the user wrote on the prompt.
+If an alias for a command is detected in user input, the Shell will execute that command and produce a new prompt upon the user pressing Enter.
+However if there are no aliases detected in the user, next the Shell will check if there are any built-in functions in the parameters the user inputted on the prompt.
+If what the user wrote isn't a built-in command, next it finds the program that runs the command the user inputted and executes it, producing the output
+and then producing a new prompt afterwards.
+If the Shell finds any syntax and/of parameter errors, like misuse of a command or misspelling, it will produce an error message and then a new prompt.
 
-And more to be added.
-If there is nothing on the command line and the user presses enter, the Shell will produce a newline.
-If the user inputs characters and numbers without the echo command, the Shell will produce an error message and then a newline.
-If the user inputs the command ls, it should list all files within the current directory on a single line with spaces in between each file.
-If the user inputs another other command without the proper arguments and flags, an error message will display and produce a newline after.
+#### commands and syntax
+
+We created commands and functions that the user can utilize in our Shell, listed below:
+| File					| Description					|
+|---------------------------------------|-----------------------------------------------|
+|ac.c					|program that prints out the arguments after program is run.|
+|cdcommand.c				|Program to change directory.|
+|executech.c				|program that uses execve function.|
+|lscommand.c				|Program for ls command.|
+|pid.c					|program that prints out the process id number using getpid function.|
+|print_max_pid				|shell script that prints the max pid number of the system.|
+
+### Examples of Shell outputs
