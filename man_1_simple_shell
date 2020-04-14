@@ -17,17 +17,3 @@ Supported commands are:
 - ls: command for listing files and directories
 .PP
 - cd: command for changing directories
-.PP
-- echo: command for displaying strings
-.PP
-- chmod: command setting permissions for users on system
-.PP
-- chown: command to change owner of file and directories
-.PP
-- sort: command to sort name of files
-.PP
-- grep: command to print out matching lines
-.PP
-- cut: command to remove sections of a file
-.PP
-- tr: command to translate characters
