@@ -4,7 +4,6 @@
  * @line: the buffer
  * @args: the arguments passed
  * @environment: the environment
- * @exit_status: the exit status
  * Return: void
  */
 void builtins(char *line, char **args, char **environment)
