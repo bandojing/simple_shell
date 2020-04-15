@@ -11,10 +11,9 @@ int main(int argc, char **argv, char **environment)
 {
 	char *line = NULL;
 	char **args = NULL;
-	int i = 0, status = 0;
 	size_t len = 0;
 	ssize_t read = 0;
-
+	(void)argc, (void)argv;
 	while (1)
 	{
 		if (isatty(STDIN_FILENO) == 1)
