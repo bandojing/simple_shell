@@ -2,18 +2,16 @@
 #include "holberton.h"
 
 /**
- * _execute - function that executes in the main shell
+ * execute - function that executes in the main shell
  * @args: the arguments after strtoked
- * @exit_status: the exit status
- * @number_of_commands: a counter to keep track of all commands that are run
  * Return: void
  */
 void execute(char **args)
 {
 	pid_t my_pid;
-	
+
 	my_pid = fork();
-	
+
 	if (access(args[0], X_OK) == 0)
 	{
 		if (my_pid == 0) /* 0 = child */
