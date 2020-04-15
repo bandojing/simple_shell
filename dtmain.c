@@ -79,7 +79,7 @@ char **split_token(char *line)
 }
 
 /**
- * no_nl - removes the new line with the NULL character
+ * remove_newline - removes the new line with the NULL character
  * @line: the line of user input
  * Return: nothing
  */
