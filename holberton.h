@@ -19,9 +19,9 @@
 #include <errno.h>
 
 /*execute functions */
-void builtins(char *line, char **args, char **environment, int *exit_status);
-void execute(char **args, int *exit_status);
-int print_environment(char **environment, int *exit_status);
+void builtins(char *line, char **args, char **environment);
+void execute(char **args);
+int print_environment(char **environment);
 int ctrld(char *line);
 
 /* strings funcs */
