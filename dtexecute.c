@@ -8,11 +8,10 @@
  * @number_of_commands: a counter to keep track of all commands that are run
  * Return: void
  */
-void execute(char **args, int *exit_status)
+void execute(char **args)
 {
 	pid_t my_pid;
 	my_pid = fork();
-	*exit_status = 0;
 	if (access(args[0], X_OK) == 0)
 	{
 		if (my_pid == 0) /* 0 = child */
@@ -30,7 +29,6 @@ void execute(char **args, int *exit_status)
 		print_str(" simple shell: cd: ");
 
 		perror(args[0]);
-		*exit_status = 127;
 	}
 	free(args);
 }

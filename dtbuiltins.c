@@ -21,7 +21,7 @@ int exit_function(char *line, char **args, int *ex_st)
  *
  *Return: 0 on success
  */
-int print_environment(char **environment, int *ex_st)
+int print_environment(char **environment)
 {
 	int index = 0, length = 0;
 

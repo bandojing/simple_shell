@@ -7,16 +7,16 @@
  * @exit_status: the exit status
  * Return: void
  */
-void builtins(char *line, char **args, char **environment, int *exit_status)
+void builtins(char *line, char **args, char **environment)
 {
 
 	if (_strcmp(args[0], "env") == 0)
-		print_environment(environment, exit_status);
+		print_environment(environment);
 
 	if (_strcmp(args[0], "exit") == 0)
 	{
 		free(line);
 		free(args);
-		exit(*exit_status);
+		exit(127);
 	}
 }

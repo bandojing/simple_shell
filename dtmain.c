@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - a bootleg  UNIX shell
+ * main - a bootleg UNIX shell
  * @argc: the number of arguments passed by the user
  * @argv: the array of strings of the arguments passed
  * @environment: the enviroment
@@ -12,7 +12,6 @@ int main(int argc, char **argv, char **environment)
 	char *line = NULL;
 	char **args = NULL;
 	int i = 0, status = 0;
-	static int exit_stat;
 	size_t len = 0;
 	ssize_t read = 0;
 
@@ -34,9 +33,9 @@ int main(int argc, char **argv, char **environment)
 
 		args = split_token(line);
 
-		builtins(line, args, environment, &exit_stat);
+		builtins(line, args, environment);
 
-		execute(args, &exit_stat);
+		execute(args);
 
 		fflush(stdin);
 	}
