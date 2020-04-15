@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- *exit -  exits the shell
- *@array: the array of strings to execute
+ *exit_function -  exits the shell
  *@line: buffer of user input
- *@number_of_commands: the number of commands entered by the user
- *
+ *@args: pointer to argument string
+ *@ex_st: pointer to exit status
+ *Return: returns int
  */
 int exit_function(char *line, char **args, int *ex_st)
 {
@@ -16,7 +16,7 @@ int exit_function(char *line, char **args, int *ex_st)
 }
 
 /**
- *environment_op - handles environment builtin
+ *print_environment - handles environment builtin
  *@environment: environment variable
  *
  *Return: 0 on success
