@@ -1,6 +1,6 @@
 ## simple_shell
 
-This is a custom command line interpreter, otherwise known as a Shell. The purpose of this Shell is to execute commands based on what the user inputs on the prompt. Our prompt to be displayed is simply the executable file of our 
+This is a custom command line interpreter, otherwise known as a Shell. The purpose of this Shell is to execute commands based on what the user inputs on the prompt. Our prompt to be displayed is simply the executable file of our
 Shell, which takes in a number of parameters afterwards.
 Once parameters are filled in, a process takes place and the first step of the process is our Shell first checks for aliases of commands in what the user wrote on the prompt.
 If an alias for a command is detected in user input, the Shell will execute that command and produce a new prompt upon the user pressing Enter.
