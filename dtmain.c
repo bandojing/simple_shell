@@ -24,7 +24,6 @@ int main(int argc, char **argv, char **environment)
 			return (ctrld(line));
 		if (line[0] == '\n')
 		{
-			free(line);
 			continue;
 		}
 
