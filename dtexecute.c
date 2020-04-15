@@ -11,7 +11,9 @@
 void execute(char **args)
 {
 	pid_t my_pid;
+	
 	my_pid = fork();
+	
 	if (access(args[0], X_OK) == 0)
 	{
 		if (my_pid == 0) /* 0 = child */
