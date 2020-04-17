@@ -34,8 +34,6 @@ int main(int argc, char **argv, char **environment)
 		builtins(line, args, environment);
 
 		execute(args);
-
-		fflush(stdin);
 	}
 	free(line);
 	return (0);
