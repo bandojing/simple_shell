@@ -1,6 +1,6 @@
 .\" Manpage for Shell
 
-.TH man 8 "16 April 2020" "1.0" "bootlegshell"
+.TH dash 1 "16 April 2020" "1.0" "bootlegshell man page"
 
 .SH NAME
     bootlegshell - interface to the Unix system kernel
@@ -73,5 +73,5 @@ Examples of Environment Variables
      The command line prints an extra blank line periodically.
 
 .SH AUTHORS
-     Written by DT Van, Victor Rivera, and Bryant Davis, 2020
+     Written by DT Van, Victor Rivera, and Bryant Davis, 16 April 2020
 
