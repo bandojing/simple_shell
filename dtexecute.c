@@ -26,7 +26,7 @@ void execute(char **args)
 	}
 	else
 	{
-		print_str(" simple shell: cd: ");
+		print_str(" unknown command: ");
 
 		perror(args[0]);
 	}
