@@ -23,6 +23,7 @@ void builtins(char *line, char **args, char **environment);
 void execute(char **args);
 int print_environment(char **environment);
 int ctrld(char *line);
+void ctrlc(int signum);
 
 /* strings funcs */
 int _strlen(char *s);
