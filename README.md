@@ -98,7 +98,15 @@ OLDPWD=/Users/qpv2/simple_shell
 $$$  simple shell: cd: env: No such file or directory
 $$$ exit
 ```
-
+```
+dtvan@dtvangogh:simple_shell$ ./bootlegshell
+$$$ gibberish
+ simple shell: cd: gibberish: No such file or directory
+$$$  simple shell: cd: gibberish: No such file or directory
+$$$ exit
+exit
+dtvan@dtvangogh:simple_shell$
+```
 ```
 dtvan@dtvangogh:simple_shell$ ./bootlegshell
 $$$ pwd
