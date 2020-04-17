@@ -1,6 +1,6 @@
 .\" Manpage for Shell
 
-.TH man 8 "16 April 2020" "1.0" 
+.TH man 8 "16 April 2020" "1.0" "bootlegshell"
 
 .SH NAME
     bootlegshell - interface to the Unix system kernel
