@@ -18,6 +18,7 @@ int main(int argc, char **argv, char **environment)
 	{
 		if (isatty(STDIN_FILENO) == 1)
 			write(STDOUT_FILENO, "$$$ ", 4);
+		signal(SIGINT, ctrlc);
 
 		read = getline(&line, &len, stdin);
 		if (read == EOF || read == -1)
@@ -52,11 +53,11 @@ char **split_token(char *line)
 
 	int number_of_arguments = 0;
 
-	tokens = strtok(line, " \t");
+	tokens = strtok(line, " ");
 
 	while (tokens != NULL)
 	{
-		tokens = strtok(NULL, " \t");
+		tokens = strtok(NULL, " ");
 		number_of_arguments++;
 	}
 
