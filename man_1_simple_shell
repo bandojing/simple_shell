@@ -2,7 +2,7 @@
 
 
 .SH NAME
-    hsh - interface to the Unix system kernel
+    bootlegshell - interface to the Unix system kernel
 
 .SH SYNOPSIS
     $ [command] [-flags ]
