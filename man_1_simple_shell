@@ -1,5 +1,6 @@
 .\" Manpage for Shell
 
+.TH man
 
 .SH NAME
     bootlegshell - interface to the Unix system kernel
