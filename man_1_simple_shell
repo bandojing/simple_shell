@@ -1,19 +1,76 @@
-.TH SIMPLE_SHELL 1
-.TH man 98 "April 2020" "1.0" "simple shell man page"
+.\" Manpage for Shell
+
+
 .SH NAME
-Simple_Shell \- Custom made command line interpreter
+    hsh - interface to the Unix system kernel
+
 .SH SYNOPSIS
-.B ./shell
-[command] [...]
+    $ [command] [-flags ]
+
 .SH DESCRIPTION
-The 'Simple Shell' is a command line interpreter which takes user input and outputs the result on a newline. When the user's input is a string of characters, it will display that string of characters followed by a newline.
-.PP
-When the user's input is a command without the proper syntax, the shell will display an error. However if syntax is followed, the command line will output the result of the executed command.
-.SH SEE ALSO
-https://github.com/bandojing/simple_shell
+     A Shell provides you with an interface to the system kernel.
+     It takes user input  and  executes  programs. When a program  finishes executing, it displays
+     that command's output followed by a new prompt.
+
+.SH PROMPT
+     The  command prompt,  $$$, is
+     issued by the shell. After the prompt is displayed the user is
+	 able to type a command.
+     The Shell reads your input after you press Enter. It executes the first word
+     of  input. Spaces and tabs separate words.
+
+
 .SH OPTIONS
-Supported commands are:
-.PP
-- ls: command for listing files and directories
-.PP
-- cd: command for changing directories
+
+Built-ins
+
+
+     env
+     Prints the current environment to standard output
+
+     exit
+     Causes the shell to exit
+
+     cd (unavailable)
+     Change  the  current working directory.
+Examples of Commands
+
+     pwd(unavailable)
+     Prints the name of the current directory. man pwd for more info
+
+     ls(unavailable)
+     Lists the files in the current working directory. man ls for more
+     info.
+
+     echo(unavailable)
+     Displays a string to standard output. man echo for more info.
+
+     sh
+     A shell program written by Ken Thompson. man sh for more info.
+
+.SH ENVIRONMENT
+
+Examples of Environment Variables
+
+     USER
+     The user of the current system
+
+     HOME
+     The default home directory of the system
+
+     PWD
+     The current parent directory
+
+
+.SH SEE ALSO
+    execve(), exit(), getline(),
+   malloc(), perror(), signal(), strtok(), wait(),
+    isatty(), access().
+
+
+.SH BUGS
+     The command line prints an extra blank line periodically.
+
+.SH AUTHORS
+     Written by DT Van, Victor Rivera, and Bryant DAvis
+
