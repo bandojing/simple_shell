@@ -1,3 +1,4 @@
+![shell demo gif](https://github.com/bandojing/simple_shell/blob/master/ezgif.com-video-to-gif%20(1).gif)
 ## Simple_shell
 ### Description
 Shell is program that executes commands read from a terminal or a file.
